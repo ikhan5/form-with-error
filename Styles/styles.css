@@ -1,0 +1,192 @@
+/******************** General Stylings *********************/
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+.page-wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+img{
+    max-width: 100% !important;
+}
+
+.hidden{
+    position: absolute;
+    left: -10000px;
+}
+
+/*********************** Navigation ************************/
+header{
+    background-color: rgb(59, 55, 55);
+    max-height: 150px;
+    overflow: hidden;
+}
+
+.top-nav{
+    color: white;
+    overflow: hidden;
+}
+
+.nav ul{
+     list-style-type: none;
+     float: right;
+     padding-top: 70px;
+}
+
+.nav ul li{
+    display: inline;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: #ccc;
+}
+
+.nav ul li a:hover{
+    text-decoration: underline;
+}
+
+#site-logo{
+    width: 200px;
+    height: 170px;
+    float: left;
+}
+
+@media screen and (max-width:685px) {
+    .top-nav ul,#site-log{
+        float: none;
+        display:block;
+    }
+
+    #site-logo{
+        width: 160px;
+        height: 150px;
+    }
+
+    .top-nav ul{
+        padding-top: 50px;
+    }
+
+}
+
+/*********************** Newsletter ***********************/
+#newsletter{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 25px;
+    color: white;
+    position: relative;
+}
+
+#newsletter__required{
+    margin-top: 40px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+}
+
+#newsletter__error{
+    color: red;
+    position: absolute;
+    left: 25px;
+}
+
+#newsletter__fields{
+    position: absolute;
+    right:25px;
+}
+
+#newsletter fieldset{
+    border-color: white;
+}
+.newsletter__field{
+    margin-left: 50px;
+}
+
+#newsletter legend{
+    margin-left: 20px;
+    padding: 0 5px;
+}
+
+#newsletter label, #newsletter input{
+    float: left;
+    display: block;
+    margin: 0 auto;
+}
+
+#newsletter label{
+    width: 35%;
+}
+
+#newsletter input{
+    width: 55%;
+    padding: 7px;
+    margin-bottom: 15px;
+    background-color: #aaa;
+}
+
+#newsletter__sign-up{
+    clear: both;
+    float: right;
+    padding: 7px 15px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    font-size: 1em;
+    background-color: black;
+    border-color: #aaa;
+    color: #aaa;
+}
+
+#newsletter__sign-up:hover{
+    background-color: #aaa;
+    border-color: black;
+    color: black;
+}
+
+/********************** Confirmation **********************/
+#confirmation{
+    max-width: 800px;
+    border: solid 1px white;
+    margin: 50px auto 85px auto;
+    padding: 50px;
+    
+}
+
+#confirmation h2{
+    margin-bottom: 20px;
+}
+
+#confirmation p{
+    margin-bottom: 15px;
+}
+
+#confirmation p:last-child{
+    text-align: right;
+}
+
+/************************* Footer *************************/ 
+footer{
+    border-top: solid 1px #ccc;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+
+#footer__copyright{
+    margin-top: 7px;
+    font-style: italic;
+    display: inline;
+}
+
